@@ -114,11 +114,11 @@
                 <xsl:if test="sm:url/sm:lastmod">
                     <th>Last Modified</th>
                 </xsl:if>
-                <xsl:if test="sm:url/sm:changefreq">
-                    <th>Change Frequency</th>
-                </xsl:if>
                 <xsl:if test="sm:url/sm:priority">
                     <th>Priority</th>
+                </xsl:if>
+                <xsl:if test="sm:url/sm:changefreq">
+                    <th>Change Frequency</th>
                 </xsl:if>
             </tr>
             <xsl:for-each select="sm:url">
