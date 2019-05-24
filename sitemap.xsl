@@ -82,7 +82,9 @@
             <tr>
                 <th></th>
                 <th>URL</th>
-                <th>Last Modified</th>
+                <xsl:if test="sm:url/sm:lastmod">
+                    <th>Last Modified</th>
+                </xsl:if>
             </tr>
             <xsl:for-each select="sm:sitemap">
                 <tr>
